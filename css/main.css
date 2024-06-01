@@ -1,0 +1,75 @@
+    /* <!-- ==========================Global CSS ================================ --> */
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap');
+
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: #F6E9B2;
+    }
+
+    h1 {
+        font-family: "Pacifico", cursive;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    h1::before {
+        content: "";
+        position: absolute;
+        width: 21%;
+        height: 16%;
+        left: 450px;
+        bottom: 43px;
+        background-color: #fec260;
+        transition: height 350ms;
+        z-index: -1;
+    }
+
+    h1:hover::before {
+        height: 30%;
+    }
+
+    .contain {
+        border-width: 2px 0 2px 0;
+        border-style: dotted;
+        border-color: #352e28;
+    }
+
+    h2 {
+        font-family: "Righteous", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        font-style: normal;
+        background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .form-control:focus {
+        color: #212529;
+        background-color: #fff;
+        border-color: #d99c39;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem #fec26055;
+    }
+
+    :not(.btn-check)+.btn:active {
+        border-color: transparent   ;
+    }
+
+    /*btn  */
+    .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #BB4120;
+        --bs-btn-border-color: #BB4120;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #BB4120;
+        --bs-btn-hover-border-color: #BB4120;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #BB4120;
+        --bs-btn-active-border-color: #BB4120;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #BB4120;
+        --bs-btn-disabled-border-color: #BB4120;
+    }
